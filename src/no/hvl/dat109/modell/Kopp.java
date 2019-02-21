@@ -24,4 +24,13 @@ public class Kopp {
 	public void setSum(int sum) {
 		this.sum = sum;
 	}
+	
+	public void trill() {
+		Terning t1 = new Terning();
+		Terning t2 = new Terning();
+		
+		sum = t1.getVerdi()+t2.getVerdi();
+		
+	}
+		
 }

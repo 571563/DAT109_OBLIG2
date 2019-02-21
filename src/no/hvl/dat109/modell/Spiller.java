@@ -24,4 +24,14 @@ public class Spiller {
 	public void setVerdi(int verdi) {
 		this.verdi = verdi;
 	}
+	
+	public void spill(Kopp kopp) {
+		kopp.trill();
+		verdi += kopp.getSum();
+	}
+
+	@Override
+	public String toString() {
+		return "Spiller [navn=" + navn + ", verdi=" + verdi + "]";
+	}
 }
